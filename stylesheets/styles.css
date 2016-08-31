@@ -103,7 +103,7 @@ a {
   align-items: center;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 768px) and (orientation: portrait){
   .main-content{
     flex-direction: row;
     overflow: hidden;
