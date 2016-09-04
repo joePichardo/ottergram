@@ -35,6 +35,7 @@ function addThumbClickHandler(thumb) {
   thumb.addEventListener('click', function (event){
     event.preventDefault();
     setDetailsFromThumb(thumb);
+    showDetails();
   });
 }
 
@@ -50,6 +51,10 @@ function hideDetails() {
   document.body.classList.add(HIDDEN_DETAIL_CLASS);
 }
 
+function showDetails() {
+  'use strict';
+  document.body.classList.remove(HIDDEN_DETAIL_CLASS);
+}
 function addKeyPressHandler() {
   'use strict';
   document.body.addEventListener('keyup', function (event) {
